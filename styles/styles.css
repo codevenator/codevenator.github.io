@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Oswald:300");
+.container--main {
+  height: 100vh;
+  width: 100%;
+  padding: 50px 100px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #111;
+}
+.container--inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s linear;
+}
+
+p {
+  color: #eee;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.intro {
+  opacity: 0;
+}
+.intro.visible {
+  opacity: 1;
+}
+.intro p {
+  display: block;
+  text-align: right;
+}
+.intro .title {
+  font-family: "Anton", sans-serif;
+  font-size: 42px;
+}
+.intro .sub {
+  font-family: "Oswald", sans-serif;
+}
+
+.name {
+  font-family: "Anton", sans-serif;
+  margin-left: 18px;
+}
+.name p {
+  font-size: 7rem;
+  line-height: 1;
+  color:cyan;
+}
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
